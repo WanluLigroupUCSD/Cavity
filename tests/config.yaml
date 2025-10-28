@@ -1,0 +1,37 @@
+# Example configuration file for MDAnalysis
+
+# List of XYZ files to process
+xyz_files: 
+  - 'EDL_pure-CO2_-0.2V.xyz'
+  # Add more files as needed
+
+# System dimensions (if not provided, will use the dimensions from the XYZ files)
+dimensions:
+  # - 10.3802995682
+  #- 7.7852001190
+  #- 33.0000000000
+  #- 90
+  #- 90
+  #- 90
+
+# Atom selection string
+selection_str: 'name O'
+
+# Cutoff distance (radius of the sphere)
+cutoff: 2.0
+
+# Temperature in Kelvin
+temperature: 298.15
+
+# Z range for the slab, specifying the start, end, and step values
+z_range: 
+  start: 6
+  end: 23
+  step: 0.25
+
+# Grid step size for X and Y directions
+step_size: 1.0
+
+# Output file name (without extension)
+output_file: 'E-Z'
+
